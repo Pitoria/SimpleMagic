@@ -1,0 +1,22 @@
+fire:
+  velocity: 1.5
+  explosion-power: 9.5
+  incendiary: false
+  destroy-blocks: false
+
+ice:
+  velocity: 1.7
+  damage: 9
+  slow-duration: 60
+  slow-amplifier: 1
+
+lightning:
+  damage: 8.0
+  range: 30
+  cooldown: 6
+  strike-effect: true
+
+healing:
+  radius: 5
+  duration: 25
+  regeneration-level: 2

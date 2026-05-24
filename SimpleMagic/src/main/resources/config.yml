@@ -1,0 +1,44 @@
+wands:
+  fire_wand:
+    material: BLAZE_ROD
+    name: "&cVarita de Fuego"
+    lore:
+      - "&7Una varita elemental."
+      - "&7Elemento: &cFuego"
+    cooldown: 3
+    xp-cost: 3
+    powers:
+      - fire
+
+  ice_wand:
+    material: STICK
+    name: "&bVarita de Hielo"
+    lore:
+      - "&7Una varita elemental."
+      - "&7Elemento: &bHielo"
+    cooldown: 3
+    xp-cost: 3
+    powers:
+      - ice
+
+  lightning_wand:
+    material: BREEZE_ROD
+    name: "&eVarita de Rayo"
+    lore:
+      - "&7Una varita elemental."
+      - "&7Elemento: &eRayo"
+    cooldown: 3
+    xp-cost: 3
+    powers:
+      - lightning
+
+  healer_wand:
+    material: END_ROD
+    name: "&aVarita de Curacion"
+    lore:
+      - "&7Una varita elemental."
+      - "&7Elemento: &aVida"
+    cooldown: 8
+    xp-cost: 4
+    powers:
+      - healing

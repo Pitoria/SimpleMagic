@@ -1,0 +1,23 @@
+prefix: "&8[&dSimpleMagic&8] "
+
+only-players: "%prefix%&cOnly players can use this command."
+no-permission: "%prefix%&cYou do not have permission."
+player-not-found: "%prefix%&cPlayer not found."
+unknown-command: "%prefix%&cUnknown command."
+
+usage-wand-give: "%prefix%&cUsage: /simplemagic wand give <player> <wand>"
+usage-main: "%prefix%&cUsage: /simplemagic <give|reload>"
+usage-give: "%prefix%&cUsage: /simplemagic give <player> <wand>"
+reload-powers: "%prefix%&aPowers reloaded."
+usage-reload: "%prefix%&cUsage: /simplemagic reload <config|messages|wands|powers|all>"
+not-enough-xp: "%prefix%&cYou need &f%cost% XP levels &cto use this wand."
+
+reload-config: "%prefix%&aConfig reloaded."
+reload-messages: "%prefix%&aMessages reloaded."
+reload-wands: "%prefix%&aWands reloaded."
+reload-all: "%prefix%&aPlugin reloaded."
+
+wand-not-found: "%prefix%&cWand not found: &f%wand%&c."
+wand-given: "%prefix%&aYou gave &f%wand% &ato &f%player%&a."
+wand-used: "%prefix%&aWand used: &f%wand%&a."
+wand-cooldown: "%prefix%&cThis wand is on cooldown for &f%time%s&c."
