@@ -1,3 +1,32 @@
+#███████╗██╗███╗   ███╗██████╗ ██╗     ███████╗███╗   ███╗ █████╗  ██████╗ ██╗ ██████╗
+#██╔════╝██║████╗ ████║██╔══██╗██║     ██╔════╝████╗ ████║██╔══██╗██╔════╝ ██║██╔════╝
+#███████╗██║██╔████╔██║██████╔╝██║     █████╗  ██╔████╔██║███████║██║  ███╗██║██║
+#╚════██║██║██║╚██╔╝██║██╔═══╝ ██║     ██╔══╝  ██║╚██╔╝██║██╔══██║██║   ██║██║██║
+#███████║██║██║ ╚═╝ ██║██║     ███████╗███████╗██║ ╚═╝ ██║██║  ██║╚██████╔╝██║╚██████╗
+#╚══════╝╚═╝╚═╝     ╚═╝╚═╝     ╚══════╝╚══════╝╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═╝ ╚═════╝
+
+#Created By Braiton
+
+# wands:
+
+#  fire_wand: > ID wand
+#    material: BLAZE_ROD > Material name
+#    name: "&cVarita de Fuego" > Name Wand item
+#    lore: > Lore item
+#      - "&7Una varita elemental."
+#      - "&7Elemento: &cFuego"
+#    cooldown: 3 > Number cooldown in seconds
+#    xp-cost: 3 > Cost Xp in levels
+#    powers: > List of powers
+#      - fire
+#      - ice
+#      - lightning
+#      - healing
+#      - fire-beam
+#      - lightning-beam
+#      - ice-beam
+#      - life-beam
+
 wands:
   fire_wand:
     material: BLAZE_ROD
@@ -33,7 +62,7 @@ wands:
       - lightning
 
   healer_wand:
-    material: END_ROD
+    material: GOLDEN_HOE
     name: "&aVarita de Curacion"
     lore:
       - "&7Una varita elemental."
@@ -42,3 +71,47 @@ wands:
     xp-cost: 4
     powers:
       - healing
+
+  fire_beam_staff:
+    material: BLAZE_ROD
+    name: "&cVarita de Lanzallamas"
+    lore:
+      - "&7Una varita elemental."
+      - "&7Elemento: &cFuego"
+    cooldown: 5
+    xp-cost: 1
+    powers:
+      - fire-beam
+
+  ice_beam_staff:
+    material: STICK
+    name: "&cVarita de Congelante"
+    lore:
+      - "&7Una varita elemental."
+      - "&7Elemento: &bHielo"
+    cooldown: 5
+    xp-cost: 1
+    powers:
+      - ice-beam
+
+  lightning_beam_staff:
+    material: BREEZE_ROD
+    name: "&cVarita de Electrica"
+    lore:
+      - "&7Una varita elemental."
+      - "&7Elemento: &eRayo"
+    cooldown: 6
+    xp-cost: 2
+    powers:
+      - lightning-beam
+
+  life_beam_staff:
+    material: GOLDEN_HOE
+    name: "&aVarita de Apoyo"
+    lore:
+      - "&7Una varita elemental."
+      - "&7Elemento: &aVida"
+    cooldown: 4
+    xp-cost: 1
+    powers:
+      - life-beam

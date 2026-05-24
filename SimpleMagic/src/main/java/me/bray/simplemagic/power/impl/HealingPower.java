@@ -6,6 +6,7 @@ import org.bukkit.Location;
 import org.bukkit.Particle;
 import org.bukkit.Sound;
 import org.bukkit.entity.LivingEntity;
+import org.bukkit.entity.Monster;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.scheduler.BukkitRunnable;
@@ -64,6 +65,12 @@ public class HealingPower implements WandPower {
                 );
 
                 for (LivingEntity entity : center.getWorld().getNearbyLivingEntities(center, radius)) {
+
+                    if (entity instanceof Monster) continue;
+                    if (entity.isDead()) continue;
+                    if (!entity.isValid()) continue;
+                    if (entity.getHealth() <= 0) continue;
+
                     double newHealth = Math.min(
                             entity.getMaxHealth(),
                             entity.getHealth() + healAmount

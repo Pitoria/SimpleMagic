@@ -4,10 +4,7 @@ import me.bray.simplemagic.listener.PowerExplosionListener;
 import me.bray.simplemagic.listener.PowerHitListener;
 import me.bray.simplemagic.message.MessageManager;
 import me.bray.simplemagic.power.PowerRegistry;
-import me.bray.simplemagic.power.impl.FirePower;
-import me.bray.simplemagic.power.impl.HealingPower;
-import me.bray.simplemagic.power.impl.IcePower;
-import me.bray.simplemagic.power.impl.LightningPower;
+import me.bray.simplemagic.power.impl.*;
 import me.bray.simplemagic.wand.WandManager;
 import org.bukkit.plugin.java.JavaPlugin;
 import me.bray.simplemagic.command.SimpleMagicCommand;
@@ -36,6 +33,11 @@ public final class SimpleMagic extends JavaPlugin {
         this.powerRegistry.register(new IcePower(this));
         this.powerRegistry.register(new LightningPower(this));
         this.powerRegistry.register(new HealingPower(this));
+
+        powerRegistry.register(new FireBeamPower(this));
+        powerRegistry.register(new IceBeamPower(this));
+        powerRegistry.register(new LightningBeamPower(this));
+        powerRegistry.register(new LifeBeamPower(this));
 
         this.wandManager = new WandManager(this);
         this.wandManager.loadWands();
